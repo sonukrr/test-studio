@@ -1,0 +1,428 @@
+{
+  "projectId": "5791a228-9c9a-45eb-8add-015ccef60489",
+  "version": 3,
+  "company": {
+    "name": "acmeCorp",
+    "tagline": "Build what comes next",
+    "brand": {
+      "logo": "",
+      "logoAlt": "acmeCorp",
+      "favicon": "",
+      "tokens": {
+        "colors": {
+          "primary": "#1F4FD8",
+          "secondary": "#0F172A",
+          "background": "#FFFFFF",
+          "text": "#111827"
+        },
+        "fonts": {
+          "heading": "Inter",
+          "body": "Inter"
+        },
+        "typeScale": [
+          48,
+          32,
+          24,
+          18,
+          16,
+          14
+        ],
+        "radius": 8,
+        "spacing": 8,
+        "buttonStyle": "solid"
+      }
+    }
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "pageId": "home"
+    },
+    {
+      "label": "Jobs",
+      "pageId": "jobs"
+    }
+  ],
+  "pages": [
+    {
+      "id": "home",
+      "name": "Home",
+      "path": "/",
+      "sections": [
+        {
+          "id": "home-nav",
+          "type": "nav",
+          "category": "static",
+          "source": "custom",
+          "label": "Navigation",
+          "props": {},
+          "content": {
+            "logoText": "acmeCorp",
+            "links": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Jobs",
+                "href": "/jobs"
+              }
+            ]
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "home-hero",
+          "type": "hero",
+          "category": "static",
+          "source": "custom",
+          "label": "Hero Banner",
+          "props": {},
+          "content": {
+            "headline": "Careers at acmeCorp",
+            "subheadline": "Join a team building what comes next.",
+            "ctaText": "See open roles",
+            "ctaHref": "/jobs"
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "home-value-props",
+          "type": "value-props",
+          "category": "static",
+          "source": "custom",
+          "label": "Why Join Us",
+          "props": {},
+          "content": {
+            "title": "Why join acmeCorp",
+            "items": [
+              {
+                "title": "Work that matters",
+                "body": "Small teams, real ownership, and problems worth solving."
+              },
+              {
+                "title": "Room to grow",
+                "body": "Clear paths, honest feedback and the support to move forward."
+              },
+              {
+                "title": "Flexible by default",
+                "body": "Remote-friendly working and time that fits your life."
+              }
+            ]
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "home-benefits",
+          "type": "benefits",
+          "category": "static",
+          "source": "custom",
+          "label": "Benefits",
+          "props": {},
+          "content": {
+            "title": "Benefits",
+            "items": [
+              {
+                "title": "Health cover",
+                "body": "Medical, dental and vision for you and your family."
+              },
+              {
+                "title": "Paid time off",
+                "body": "Generous holiday plus paid company shutdown days."
+              },
+              {
+                "title": "Learning budget",
+                "body": "An annual allowance for courses, books and conferences."
+              },
+              {
+                "title": "Home office support",
+                "body": "A budget to set up a workspace that works for you."
+              }
+            ]
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "home-culture",
+          "type": "culture",
+          "category": "static",
+          "source": "custom",
+          "label": "Culture",
+          "props": {},
+          "content": {
+            "title": "How we work",
+            "body": "We keep teams small, decisions close to the work, and communication written down so anyone can catch up. Progress beats polish: we ship, we learn, we improve together."
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "home-cta",
+          "type": "cta",
+          "category": "static",
+          "source": "custom",
+          "label": "Call to Action",
+          "props": {},
+          "content": {
+            "headline": "Ready to join us?",
+            "body": "Browse every open role at acmeCorp.",
+            "ctaText": "View open roles",
+            "ctaHref": "/jobs"
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "home-footer",
+          "type": "footer",
+          "category": "static",
+          "source": "custom",
+          "label": "Footer",
+          "props": {},
+          "content": {
+            "companyName": "acmeCorp",
+            "legal": "© acmeCorp. All rights reserved.",
+            "links": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Jobs",
+                "href": "/jobs"
+              }
+            ]
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        }
+      ],
+      "seo": {
+        "title": "acmeCorp",
+        "description": ""
+      }
+    },
+    {
+      "id": "jobs",
+      "name": "Jobs",
+      "path": "/jobs",
+      "sections": [
+        {
+          "id": "jobs-nav",
+          "type": "nav",
+          "category": "static",
+          "source": "custom",
+          "label": "Navigation",
+          "props": {},
+          "content": {
+            "logoText": "acmeCorp",
+            "links": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Jobs",
+                "href": "/jobs"
+              }
+            ]
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "jobs-search",
+          "type": "job-search",
+          "category": "functional",
+          "source": "zm-careers-lib",
+          "label": "Search Jobs",
+          "props": {
+            "placeholder": "Search roles at acmeCorp",
+            "showSearchButton": true,
+            "appearance": "outline"
+          },
+          "content": {},
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "jobs-row",
+          "type": "row",
+          "category": "layout",
+          "source": "layout",
+          "label": "Jobs",
+          "props": {
+            "direction": "row",
+            "columns": 2,
+            "gap": 32,
+            "align": "start",
+            "justify": "start",
+            "wrap": true,
+            "padding": 24,
+            "maxWidth": 1200,
+            "background": "",
+            "stackBelow": 720,
+            "reverseOnMobile": false
+          },
+          "content": {},
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": [
+            {
+              "id": "jobs-filters",
+              "type": "job-filters",
+              "category": "functional",
+              "source": "zm-careers-lib",
+              "label": "Filter Jobs",
+              "props": {
+                "label": "Filters",
+                "isClearAll": true,
+                "isPopupRequired": true
+              },
+              "content": {},
+              "visible": true,
+              "origin": {
+                "kind": "agent",
+                "ref": "",
+                "note": ""
+              },
+              "children": [],
+              "layout": {
+                "basis": "280px"
+              }
+            },
+            {
+              "id": "jobs-listing",
+              "type": "job-listing",
+              "category": "functional",
+              "source": "zm-careers-lib",
+              "label": "Browse Jobs",
+              "props": {
+                "applyBtnText": "Apply",
+                "cardClickable": true,
+                "chipsViewForSkills": true
+              },
+              "content": {},
+              "visible": true,
+              "origin": {
+                "kind": "agent",
+                "ref": "",
+                "note": ""
+              },
+              "children": [],
+              "layout": {
+                "grow": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "jobs-pagination",
+          "type": "pagination",
+          "category": "functional",
+          "source": "zm-careers-lib",
+          "label": "Page Through Results",
+          "props": {
+            "currentPage": 1,
+            "materialPagination": true
+          },
+          "content": {},
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "jobs-footer",
+          "type": "footer",
+          "category": "static",
+          "source": "custom",
+          "label": "Footer",
+          "props": {},
+          "content": {
+            "companyName": "acmeCorp",
+            "legal": "© acmeCorp. All rights reserved.",
+            "links": [
+              {
+                "label": "Home",
+                "href": "/"
+              },
+              {
+                "label": "Jobs",
+                "href": "/jobs"
+              }
+            ]
+          },
+          "visible": true,
+          "origin": {
+            "kind": "agent",
+            "ref": "",
+            "note": ""
+          },
+          "children": []
+        }
+      ],
+      "seo": {
+        "title": "Jobs",
+        "description": ""
+      }
+    }
+  ],
+  "unsupportedRequests": []
+}

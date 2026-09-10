@@ -1,0 +1,50 @@
+<!-- Generated from the Site Blueprint. Edit the blueprint, not this file. -->
+<main class="page page--jobs">
+  <!-- Navigation -->
+  <app-section
+    type="nav"
+    sectionId="jobs-nav"
+    label="Navigation"
+    [content]='{"logoText":"acmeCorp","links":[{"label":"Home","href":"/"},{"label":"Jobs","href":"/jobs"}]}'
+  ></app-section>
+
+  <!-- Search Jobs -->
+  <lib-zm-search
+    placeholder="Search roles at acmeCorp"
+    [showSearchButton]="true"
+    appearance="outline"
+  ></lib-zm-search>
+
+  <!-- Jobs -->
+  <div class="layout layout--row layout-jobs--jobs-row" style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 32px; align-items: flex-start; justify-content: flex-start; padding: 24px; max-width: 1200px; margin-inline: auto">
+    <!-- Filter Jobs -->
+    <lib-facets
+      label="Filters"
+      [isClearAll]="true"
+      [isPopupRequired]="true"
+      style="flex: 0 1 280px; min-width: 0"
+    ></lib-facets>
+
+    <!-- Browse Jobs -->
+    <lib-jobs-list
+      applyBtnText="Apply"
+      [cardClickable]="true"
+      [chipsViewForSkills]="true"
+      style="flex: 1 1 0%; min-width: 0"
+    ></lib-jobs-list>
+  </div>
+
+  <!-- Page Through Results -->
+  <lib-pagination
+    [currentPage]="1"
+    [materialPagination]="true"
+  ></lib-pagination>
+
+  <!-- Footer -->
+  <app-section
+    type="footer"
+    sectionId="jobs-footer"
+    label="Footer"
+    [content]='{"companyName":"acmeCorp","legal":"© acmeCorp. All rights reserved.","links":[{"label":"Home","href":"/"},{"label":"Jobs","href":"/jobs"}]}'
+  ></app-section>
+</main>
