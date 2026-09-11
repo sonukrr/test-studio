@@ -1,4 +1,4 @@
-/* Generated from the Site Blueprint v3. Do not edit — change the site in the studio. */
+/* Generated from the Site Blueprint v7. Do not edit — change the site in the studio. */
 
 export interface NavLink {
   label: string;
@@ -7,8 +7,8 @@ export interface NavLink {
 }
 
 export const site: { name: string; tagline: string; nav: NavLink[] } = {
-  name: "acmeCorp",
-  tagline: "Build what comes next",
+  name: "Zwayam",
+  tagline: "The future of Zwayam starts with you",
   nav: [
     {
       "label": "Home",

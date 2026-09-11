@@ -1,33 +1,37 @@
 {
-  "projectId": "5791a228-9c9a-45eb-8add-015ccef60489",
-  "version": 3,
+  "projectId": "8edf580b-2914-4f27-bca4-856590b4c9bd",
+  "version": 7,
   "company": {
-    "name": "acmeCorp",
-    "tagline": "Build what comes next",
+    "name": "Zwayam",
+    "tagline": "The future of Zwayam starts with you",
     "brand": {
       "logo": "",
-      "logoAlt": "acmeCorp",
+      "logoAlt": "Untitled site",
       "favicon": "",
       "tokens": {
         "colors": {
-          "primary": "#1F4FD8",
-          "secondary": "#0F172A",
+          "primary": "#290f0f",
+          "secondary": "#475569",
+          "accent": "#ebc024",
           "background": "#FFFFFF",
-          "text": "#111827"
+          "surface": "#F8FAFC",
+          "text": "#0F172A",
+          "muted": "#64748B",
+          "border": "#E2E8F0"
         },
         "fonts": {
-          "heading": "Inter",
+          "heading": "Poppins",
           "body": "Inter"
         },
         "typeScale": [
-          48,
-          32,
-          24,
-          18,
+          52,
+          36,
+          28,
+          20,
           16,
           14
         ],
-        "radius": 8,
+        "radius": 12,
         "spacing": 8,
         "buttonStyle": "solid"
       }
@@ -50,29 +54,21 @@
       "path": "/",
       "sections": [
         {
-          "id": "home-nav",
+          "id": "home-header",
           "type": "nav",
           "category": "static",
           "source": "custom",
-          "label": "Navigation",
+          "label": "Header",
           "props": {},
           "content": {
-            "logoText": "acmeCorp",
-            "links": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "Jobs",
-                "href": "/jobs"
-              }
-            ]
+            "showLogo": "true",
+            "sticky": "true"
           },
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": []
@@ -82,126 +78,81 @@
           "type": "hero",
           "category": "static",
           "source": "custom",
-          "label": "Hero Banner",
+          "label": "Hero banner",
           "props": {},
           "content": {
-            "headline": "Careers at acmeCorp",
-            "subheadline": "Join a team building what comes next.",
-            "ctaText": "See open roles",
+            "headline": "The future of Zwayam starts with you",
+            "subhead": "Explore opportunities and find your next career move at Zwayam.",
+            "ctaLabel": "See open roles",
+            "ctaPageId": "jobs",
+            "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDU1NTk4fDB8MXxzZWFyY2h8MXx8b2ZmaWNlJTIwdGVhbSUyMHdvcmtpbmclMjB0b2dldGhlcnxlbnwxfDB8fHwxNzg5MTA1MjIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+            "imageAlt": "A group of colleagues gathered around a laptop in a bright open-plan office",
+            "alignment": "left",
+            "imageCredit": {
+              "text": "Annie Spratt on Unsplash",
+              "url": "https://unsplash.com"
+            },
             "ctaHref": "/jobs"
           },
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": []
         },
         {
-          "id": "home-value-props",
-          "type": "value-props",
+          "id": "home-testimonials",
+          "type": "employee-stories",
           "category": "static",
           "source": "custom",
-          "label": "Why Join Us",
+          "label": "Testimonials",
           "props": {},
           "content": {
-            "title": "Why join acmeCorp",
+            "headline": "What it is like to work here",
             "items": [
               {
-                "title": "Work that matters",
-                "body": "Small teams, real ownership, and problems worth solving."
+                "name": "Placeholder name",
+                "role": "Engineering",
+                "quote": "Replace this with something one of your people actually said. Two sentences about the work and the team reads better than a paragraph about the company.",
+                "photo": "https://images.unsplash.com/photo-1662850886700-4ec19bd30d11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDU1NTk4fDB8MXxzZWFyY2h8MXx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMGElMjBwZXJzb24lMjBzbWlsaW5nJTIwYXQlMjB3b3JrfGVufDF8MXx8fDE3ODkxMDUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+                "photoAlt": "A smiling woman with curly hair in a green t-shirt sitting at a wooden table",
+                "photoCredit": {
+                  "text": "Nolan Manning on Unsplash",
+                  "url": "https://unsplash.com"
+                }
               },
               {
-                "title": "Room to grow",
-                "body": "Clear paths, honest feedback and the support to move forward."
+                "name": "Placeholder name",
+                "role": "Design",
+                "quote": "A second voice from a different team. Naming the team and how long they have been here makes a testimonial believable.",
+                "photo": "https://images.unsplash.com/photo-1675869940341-d495d49010b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDU1NTk4fDB8MXxzZWFyY2h8Mnx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMGElMjBwZXJzb24lMjBzbWlsaW5nJTIwYXQlMjB3b3JrfGVufDF8MXx8fDE3ODkxMDUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+                "photoAlt": "A man working at a desk in front of a computer",
+                "photoCredit": {
+                  "text": "Af Hfmn on Unsplash",
+                  "url": "https://unsplash.com"
+                }
               },
               {
-                "title": "Flexible by default",
-                "body": "Remote-friendly working and time that fits your life."
+                "name": "Placeholder name",
+                "role": "Customer success",
+                "quote": "A third keeps the row balanced. Ask the assistant to swap these for real quotes and photographs once you have them.",
+                "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMDU1NTk4fDB8MXxzZWFyY2h8NHx8cHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBvZiUyMGElMjBwZXJzb24lMjBzbWlsaW5nJTIwYXQlMjB3b3JrfGVufDF8MXx8fDE3ODkxMDUyMTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+                "photoAlt": "A woman in a grey jacket seated in an office, looking to one side",
+                "photoCredit": {
+                  "text": "Christina @ wocintechchat.com M on Unsplash",
+                  "url": "https://unsplash.com"
+                }
               }
             ]
           },
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
-            "note": ""
-          },
-          "children": []
-        },
-        {
-          "id": "home-benefits",
-          "type": "benefits",
-          "category": "static",
-          "source": "custom",
-          "label": "Benefits",
-          "props": {},
-          "content": {
-            "title": "Benefits",
-            "items": [
-              {
-                "title": "Health cover",
-                "body": "Medical, dental and vision for you and your family."
-              },
-              {
-                "title": "Paid time off",
-                "body": "Generous holiday plus paid company shutdown days."
-              },
-              {
-                "title": "Learning budget",
-                "body": "An annual allowance for courses, books and conferences."
-              },
-              {
-                "title": "Home office support",
-                "body": "A budget to set up a workspace that works for you."
-              }
-            ]
-          },
-          "visible": true,
-          "origin": {
-            "kind": "agent",
-            "ref": "",
-            "note": ""
-          },
-          "children": []
-        },
-        {
-          "id": "home-culture",
-          "type": "culture",
-          "category": "static",
-          "source": "custom",
-          "label": "Culture",
-          "props": {},
-          "content": {
-            "title": "How we work",
-            "body": "We keep teams small, decisions close to the work, and communication written down so anyone can catch up. Progress beats polish: we ship, we learn, we improve together."
-          },
-          "visible": true,
-          "origin": {
-            "kind": "agent",
-            "ref": "",
-            "note": ""
-          },
-          "children": []
-        },
-        {
-          "id": "home-cta",
-          "type": "cta",
-          "category": "static",
-          "source": "custom",
-          "label": "Call to Action",
-          "props": {},
-          "content": {
-            "headline": "Ready to join us?",
-            "body": "Browse every open role at acmeCorp.",
-            "ctaText": "View open roles",
-            "ctaHref": "/jobs"
-          },
-          "visible": true,
-          "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": []
@@ -214,31 +165,21 @@
           "label": "Footer",
           "props": {},
           "content": {
-            "companyName": "acmeCorp",
-            "legal": "© acmeCorp. All rights reserved.",
-            "links": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "Jobs",
-                "href": "/jobs"
-              }
-            ]
+            "legal": "© 2026 Zwayam. All rights reserved."
           },
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": []
         }
       ],
       "seo": {
-        "title": "acmeCorp",
-        "description": ""
+        "title": "Careers at Untitled site",
+        "description": "Explore opportunities and find your next career move."
       }
     },
     {
@@ -247,77 +188,46 @@
       "path": "/jobs",
       "sections": [
         {
-          "id": "jobs-nav",
+          "id": "jobs-header",
           "type": "nav",
           "category": "static",
           "source": "custom",
-          "label": "Navigation",
+          "label": "Header",
           "props": {},
           "content": {
-            "logoText": "acmeCorp",
-            "links": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "Jobs",
-                "href": "/jobs"
-              }
-            ]
+            "showLogo": "true",
+            "sticky": "true"
           },
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": []
         },
         {
-          "id": "jobs-search",
-          "type": "job-search",
-          "category": "functional",
-          "source": "zm-careers-lib",
-          "label": "Search Jobs",
-          "props": {
-            "placeholder": "Search roles at acmeCorp",
-            "showSearchButton": true,
-            "appearance": "outline"
-          },
-          "content": {},
-          "visible": true,
-          "origin": {
-            "kind": "agent",
-            "ref": "",
-            "note": ""
-          },
-          "children": []
-        },
-        {
-          "id": "jobs-row",
+          "id": "jobs-layout",
           "type": "row",
           "category": "layout",
           "source": "layout",
-          "label": "Jobs",
+          "label": "Filters and results",
           "props": {
             "direction": "row",
-            "columns": 2,
             "gap": 32,
             "align": "start",
-            "justify": "start",
-            "wrap": true,
-            "padding": 24,
-            "maxWidth": 1200,
-            "background": "",
-            "stackBelow": 720,
-            "reverseOnMobile": false
+            "padding": 32,
+            "maxWidth": 1240,
+            "stackBelow": 900,
+            "wrap": true
           },
           "content": {},
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": [
@@ -326,67 +236,127 @@
               "type": "job-filters",
               "category": "functional",
               "source": "zm-careers-lib",
-              "label": "Filter Jobs",
+              "label": "Filter jobs",
               "props": {
-                "label": "Filters",
-                "isClearAll": true,
-                "isPopupRequired": true
+                "label": "Filter roles",
+                "isClearAll": true
               },
               "content": {},
               "visible": true,
+              "layout": {
+                "basis": "300px"
+              },
               "origin": {
-                "kind": "agent",
-                "ref": "",
+                "kind": "base",
+                "ref": "default-site",
+                "confidence": 1,
                 "note": ""
               },
-              "children": [],
-              "layout": {
-                "basis": "280px"
-              }
+              "children": []
             },
             {
-              "id": "jobs-listing",
-              "type": "job-listing",
-              "category": "functional",
-              "source": "zm-careers-lib",
-              "label": "Browse Jobs",
+              "id": "jobs-results",
+              "type": "stack",
+              "category": "layout",
+              "source": "layout",
+              "label": "Search and results",
               "props": {
-                "applyBtnText": "Apply",
-                "cardClickable": true,
-                "chipsViewForSkills": true
+                "direction": "column",
+                "gap": 16
               },
               "content": {},
               "visible": true,
-              "origin": {
-                "kind": "agent",
-                "ref": "",
-                "note": ""
-              },
-              "children": [],
               "layout": {
                 "grow": 1
-              }
+              },
+              "origin": {
+                "kind": "base",
+                "ref": "default-site",
+                "confidence": 1,
+                "note": ""
+              },
+              "children": [
+                {
+                  "id": "jobs-search",
+                  "type": "job-search",
+                  "category": "functional",
+                  "source": "zm-careers-lib",
+                  "label": "Search jobs",
+                  "props": {
+                    "placeholder": "Search by title, skill or location",
+                    "showSearchButton": true,
+                    "appearance": "outline"
+                  },
+                  "content": {},
+                  "visible": true,
+                  "origin": {
+                    "kind": "base",
+                    "ref": "default-site",
+                    "confidence": 1,
+                    "note": ""
+                  },
+                  "children": []
+                },
+                {
+                  "id": "jobs-applied-filters",
+                  "type": "filter-chips",
+                  "category": "functional",
+                  "source": "zm-careers-lib",
+                  "label": "Applied filters",
+                  "props": {},
+                  "content": {},
+                  "visible": true,
+                  "origin": {
+                    "kind": "base",
+                    "ref": "default-site",
+                    "confidence": 1,
+                    "note": ""
+                  },
+                  "children": []
+                },
+                {
+                  "id": "jobs-list",
+                  "type": "job-listing",
+                  "category": "functional",
+                  "source": "zm-careers-lib",
+                  "label": "Open roles",
+                  "props": {
+                    "applyBtnText": "View role",
+                    "cardClickable": true,
+                    "chipsViewForSkills": true
+                  },
+                  "content": {},
+                  "visible": true,
+                  "origin": {
+                    "kind": "base",
+                    "ref": "default-site",
+                    "confidence": 1,
+                    "note": ""
+                  },
+                  "children": []
+                },
+                {
+                  "id": "jobs-pagination",
+                  "type": "pagination",
+                  "category": "functional",
+                  "source": "zm-careers-lib",
+                  "label": "Page through results",
+                  "props": {
+                    "currentPage": 1
+                  },
+                  "content": {},
+                  "visible": true,
+                  "origin": {
+                    "kind": "base",
+                    "ref": "default-site",
+                    "confidence": 1,
+                    "note": ""
+                  },
+                  "children": []
+                }
+              ]
             }
           ]
-        },
-        {
-          "id": "jobs-pagination",
-          "type": "pagination",
-          "category": "functional",
-          "source": "zm-careers-lib",
-          "label": "Page Through Results",
-          "props": {
-            "currentPage": 1,
-            "materialPagination": true
-          },
-          "content": {},
-          "visible": true,
-          "origin": {
-            "kind": "agent",
-            "ref": "",
-            "note": ""
-          },
-          "children": []
         },
         {
           "id": "jobs-footer",
@@ -396,30 +366,87 @@
           "label": "Footer",
           "props": {},
           "content": {
-            "companyName": "acmeCorp",
-            "legal": "© acmeCorp. All rights reserved.",
-            "links": [
-              {
-                "label": "Home",
-                "href": "/"
-              },
-              {
-                "label": "Jobs",
-                "href": "/jobs"
-              }
-            ]
+            "legal": "© 2026 Zwayam. All rights reserved."
           },
           "visible": true,
           "origin": {
-            "kind": "agent",
-            "ref": "",
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
             "note": ""
           },
           "children": []
         }
       ],
       "seo": {
-        "title": "Jobs",
+        "title": "Open roles at Untitled site",
+        "description": "Search and filter every open role at Untitled site."
+      }
+    },
+    {
+      "id": "job-detail",
+      "name": "Job details",
+      "path": "/jobs/:jobUrl",
+      "sections": [
+        {
+          "id": "detail-header",
+          "type": "nav",
+          "category": "static",
+          "source": "custom",
+          "label": "Header",
+          "props": {},
+          "content": {
+            "showLogo": "true",
+            "sticky": "true"
+          },
+          "visible": true,
+          "origin": {
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "detail-view",
+          "type": "job-details",
+          "category": "functional",
+          "source": "zm-careers-lib",
+          "label": "Role",
+          "props": {},
+          "content": {},
+          "visible": true,
+          "origin": {
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
+            "note": ""
+          },
+          "children": []
+        },
+        {
+          "id": "detail-footer",
+          "type": "footer",
+          "category": "static",
+          "source": "custom",
+          "label": "Footer",
+          "props": {},
+          "content": {
+            "legal": "© 2026 Zwayam. All rights reserved."
+          },
+          "visible": true,
+          "origin": {
+            "kind": "base",
+            "ref": "default-site",
+            "confidence": 1,
+            "note": ""
+          },
+          "children": []
+        }
+      ],
+      "seo": {
+        "title": "Role at Untitled site",
         "description": ""
       }
     }

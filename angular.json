@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "acmecorp": {
+    "zwayam": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
@@ -72,10 +72,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "acmecorp:build:production"
+              "browserTarget": "zwayam:build:production"
             },
             "development": {
-              "browserTarget": "acmecorp:build:development"
+              "browserTarget": "zwayam:build:development"
             }
           },
           "defaultConfiguration": "development"

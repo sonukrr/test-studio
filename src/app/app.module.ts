@@ -1,4 +1,4 @@
-/* Generated from the Site Blueprint v3. Do not edit — change the site in the studio. */
+/* Generated from the Site Blueprint v7. Do not edit — change the site in the studio. */
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -13,6 +13,7 @@ import { CareersTenantInterceptor } from "./careers-tenant.interceptor";
 import { routes } from "./app.routes";
 import { HomePageComponent } from "./pages/home/home.component";
 import { JobsPageComponent } from "./pages/jobs/jobs.component";
+import { JobDetailPageComponent } from "./pages/job-detail/job-detail.component";
 
 /**
  * The library's components inject ActivatedRoute and HttpClient, so a router
@@ -30,6 +31,7 @@ import { JobsPageComponent } from "./pages/jobs/jobs.component";
     SectionComponent,
     HomePageComponent,
     JobsPageComponent,
+    JobDetailPageComponent,
   ],
   imports: [
     BrowserModule,

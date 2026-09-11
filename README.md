@@ -1,6 +1,6 @@
-# acmeCorp
+# Zwayam
 
-Generated from a Site Blueprint by Career Site Studio — version 3, project `5791a228-9c9a-45eb-8add-015ccef60489`.
+Generated from a Site Blueprint by Career Site Studio — version 7, project `8edf580b-2914-4f27-bca4-856590b4c9bd`.
 
 An Angular 15 application, because the careers components are an Angular
 library: job search, listings, filters, pagination and the application flow are
@@ -46,6 +46,7 @@ be deleted.
 | --- | --- |
 | Home | `/` |
 | Jobs | `/jobs` |
+| Job details | `/jobs/:jobUrl` |
 
 ## Layout
 
@@ -63,6 +64,8 @@ be deleted.
 ## Approved components on this site
 
 - `FacetsComponent`
+- `FilterChipsComponent`
+- `JobViewComponent`
 - `JobsListComponent`
 - `PaginationComponent`
 - `SearchComponent`
