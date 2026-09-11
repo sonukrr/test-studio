@@ -1,6 +1,6 @@
 # Zwayam
 
-Generated from a Site Blueprint by Career Site Studio — version 7, project `8edf580b-2914-4f27-bca4-856590b4c9bd`.
+Generated from a Site Blueprint by Career Site Studio — version 8, project `243c778e-4dc6-4cd5-9910-b6b9a27f815c`.
 
 An Angular 15 application, because the careers components are an Angular
 library: job search, listings, filters, pagination and the application flow are
@@ -65,6 +65,7 @@ be deleted.
 
 - `FacetsComponent`
 - `FilterChipsComponent`
+- `FindYourSpotComponent`
 - `JobViewComponent`
 - `JobsListComponent`
 - `PaginationComponent`
